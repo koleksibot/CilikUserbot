@@ -1,5 +1,3 @@
-# Copyright (C) 2019 The Raphielscape Company LLC.
-#
 # Licensed under the Raphielscape Public License, Version 1.c (the "License");
 # you may not use this file except in compliance with the License.
 
@@ -34,7 +32,7 @@ try:
     ).json()
     if user.id in cilikblacklist:
         LOGS.warning(
-            "MAKANYA GA USAH BERTINGKAH GOBLOK, USERBOTnya GUA MATIIN NAJIS BANGET DIPAKE JAMET KEK LU.\nCredits: @greyyvbss"
+            "MAKANYA GAK USAH BERTINGKAH GOBLOK, USERBOTnya GUA MATIIN NAJIS BANGET DIPAKE JAMET KEK LU.\nCredits: @catboxmoe"
         )
         sys.exit(1)
 except Exception as e:
@@ -51,9 +49,9 @@ if not BOTLOG_CHATID:
     bot.loop.run_until_complete(autopilot())
 
 LOGS.info(
-    f"Jika {user.first_name} Membutuhkan Bantuan, Silahkan Tanyakan di Grup https://t.me/CilikSupport")
+    f"Jika {user.first_name} Membutuhkan Bantuan, Silahkan Join https://t.me/catboxmoe")
 LOGS.info(
-    f"🔥 Cilik-Userbot 🔥 ⚙️ V{BOT_VER} [TELAH DIAKTIFKAN!]")
+    f"🔥 CatboxMoe Bot 🔥 ⚙️ V{BOT_VER} [TELAH DIAKTIFKAN!]")
     
 async def cilik_userbot_on():
     try:
@@ -61,7 +59,7 @@ async def cilik_userbot_on():
             await bot.send_file(
                 BOTLOG_CHATID,
                 ALIVE_LOGO,
-                caption=f"🔥 **Cilik Userbot Berhasil Diaktifkan**!!\n━━━━━━━━━━━━━━━\n➠ **Userbot Version** - 1.1 @Cilik-Userbot\n➠ **Ketik** `.ping` **Untuk Mengecheck Bot**\n━━━━━━━━━━━━━━━\n➠ **Powered By:** @CilikProject ",
+                caption=f"🔥 **CatboxMoe bot Berhasil Diaktifkan**!!\n━━━━━━━━━━━━━━━\n➠ **Userbot Version** - 1.1 @Cilik-Userbot\n➠ **Ketik** `.ping` **Untuk Mengecheck Bot**\n━━━━━━━━━━━━━━━\n➠ **Powered By:** @CilikProject ",
             )
     except Exception as e:
         LOGS.info(str(e))
